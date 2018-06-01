@@ -2421,3 +2421,10 @@ button.btn-md:hover {
  
 .qq {background: url(../images/qq.png) no-repeat 0 0;display: block;position: fixed;top:1.5em;right:1em;z-index: 9;width:64px;height: 64px;}
 
+.ptMenus{flex:1}
+.productBox {font-size:0;flex:1;margin:0 0 0 20px;}
+.productBox .ptitems {font-size: 12px;display: inline-block;width:15%; margin: 0 8px 15px;overflow: hidden;}
+.productBox .ptitems img {height: 200px;transition:all 1s;-webkit-transition:all 1s;}
+.productBox .ptitems a:hover img {transform: translateX(30deg)}
+
+

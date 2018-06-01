@@ -561,27 +561,61 @@ pre code {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+  
+@media (max-width: 576px) {
   .container {
-    max-width: 540px;
-  }
+    max-width: 540px; 
+  } 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 770px) {
   .container {
     max-width: 720px;
   }
+  
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
+  
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+
+
+@media (min-width: 1790px) {
+  .container {
+    max-width: 1770px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .container {
+    max-width: 1880px;
   }
 }
 
