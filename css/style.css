@@ -1,10 +1,4 @@
-body{
-	padding:0;
-	margin:0;
-	background:#fff;
-	position:relative;
-	font-family: 'Raleway', sans-serif;
-}
+ 
 body a{
     transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -45,7 +39,7 @@ a.navbar-brand {
     font-size: 2.8em;
 }
 li.nav-item a {
-    font-size: 1em;
+    font-size: 1.2em;
     display: block;
     padding: 8px 20px;
     clear: both;
@@ -789,7 +783,7 @@ ul.portfolio-area li figure {
     list-style-type: none;
     overflow: hidden;
     width: 290px;
-	margin: 10px;
+	margin: 18px;
 	height: 250px
 }
 .portfolio-area li .pName {width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
@@ -2423,7 +2417,7 @@ button.btn-md:hover {
 
 .ptMenus{flex:1}
 .productBox {font-size:0;flex:1;margin:0 0 0 20px;}
-.productBox .ptitems {font-size: 12px;display: inline-block;width:15%; margin: 0 8px 15px;overflow: hidden;}
+.productBox .ptitems {font-size: 12px;display: inline-block;width:22%; margin: 0 11px;overflow: hidden;}
 .productBox .ptitems img {height: 200px;transition:all 1s;-webkit-transition:all 1s;}
 .productBox .ptitems a:hover img {transform: translateX(30deg)}
 
