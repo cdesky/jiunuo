@@ -2455,6 +2455,4 @@ button.btn-md:hover {
 .productBox {font-size:0;flex:1;margin:0 0 0 20px;}
 .productBox .ptitems {font-size: 12px;display: inline-block;width:22%; margin: 0 11px;overflow: hidden;}
 .productBox .ptitems img {height: 200px;transition:all 1s;-webkit-transition:all 1s;}
-.productBox .ptitems a:hover img {transform: translateX(30deg)}
-
-
+ 
