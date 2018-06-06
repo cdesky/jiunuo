@@ -436,8 +436,7 @@ h4.sub-tittle_w3ls {
 	padding:0;
 }
 /*-- layla --*/
-.agileits_grid  {
-}
+ 
 .agileits_grid figure {
 	position: relative;
     overflow: hidden;
@@ -973,7 +972,7 @@ ul.portfolio-area li figure {
 .odometer.odometer-auto-theme .odometer-digit .odometer-value,
 .odometer.odometer-theme-car .odometer-digit .odometer-value {
 	display: block;
-	-webkit-transform: translateZ(0);
+ 
 }
 
 .odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value,
@@ -1423,6 +1422,7 @@ ul.rating li span.fas {
 	li.nav-item{margin:0 2em;}
 	li.nav-item a {
 	font-size: 1.1em;
+	}
 }
 @media(max-width: 1440px){
 	li.nav-item{margin:0 2em;}
@@ -2284,9 +2284,7 @@ input::-ms-input-placeholder {
 /*==================================================================
             Feature section Style
 ====================================================================*/
-
-.main_feature{}
-.main_feature .single_feature{}
+ 
 .main_feature .single_feature:hover .single_feature_icon{
     border-color:#e74c3c;
     transform: rotate(45deg);
@@ -2317,9 +2315,7 @@ input::-ms-input-placeholder {
 /*==================================================================
             History section Style
 ====================================================================*/
-.main_history{
-
-}
+ 
 .main_history .single_history_content .head_title h2{
     border-left:6px solid #e74c3c;
     padding-left: 30px;
@@ -2453,6 +2449,6 @@ button.btn-md:hover {
 
 .ptMenus{flex:1}
 .productBox {font-size:0;flex:1;margin:0 0 0 20px;}
-.productBox .ptitems {font-size: 12px;display: inline-block;width:22%; margin: 0 11px;overflow: hidden;}
+.productBox .ptitems {font-size: 12px;display: inline-block; margin: 0 11px;overflow: hidden;}
 .productBox .ptitems img {height: 200px;transition:all 1s;-webkit-transition:all 1s;}
  

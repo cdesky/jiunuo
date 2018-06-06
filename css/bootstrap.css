@@ -564,59 +564,68 @@ pre code {
   
 @media (max-width: 576px) {
   .container {
-    max-width: 540px; 
+    max-width: 100%;
   } 
 }
 
 @media (max-width: 770px) {
   .container {
-    max-width: 720px;
+    max-width: 100%;
   }
   
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 100%;
   }
+
+  .productBox .ptitems {width:29%;}
   
 }
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 1000px;
+    max-width: 100%;
   }
+  .productBox .ptitems {width:29%;}
+
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 100%;
   }
+  .productBox .ptitems {width:22%;}
 }
 
 @media (min-width: 1440px) {
   .container {
-    max-width: 1350px;
+    max-width: 100%;
   }
+  .productBox .ptitems {width:22%;}
 }
 
 @media (min-width: 1440px) {
   .container {
-    max-width: 1360px;
+    max-width: 100%;
   }
+  .productBox .ptitems {width:22%;}
 }
 
 
 @media (min-width: 1790px) {
   .container {
-    max-width: 1770px;
+    max-width: 100%;
   }
+  .productBox .ptitems {width:22%;}
 }
 
 @media (min-width: 1900px) {
   .container {
     max-width: 1880px;
   }
+  .productBox .ptitems {width:22%;}
 }
 
 .container-fluid {
