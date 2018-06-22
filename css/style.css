@@ -677,7 +677,7 @@ h3.heading {
     letter-spacing: 3px;
 }
 .help_grids p{
-    font-size: 15px;
+    font-size: 18px;
     color: #ccc;
 	line-height: 26px;
     letter-spacing: 1px;
@@ -1293,8 +1293,9 @@ address h4,address p strong {
 	text-decoration: underline;
 }
 address p {
-    font-size: 15px;
-    color: #929292;
+    font-size: 17px;
+	color: #929292;
+	margin:15px 0;
 }
 address p a {
     color: #999;
@@ -1374,7 +1375,7 @@ ul.rating li span.fas {
 	font-size: 12px;
 }
 .collections p {
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 1px;
     color: #eee;
     line-height: 28px;
