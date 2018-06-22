@@ -112,8 +112,7 @@ span.display {
 /* Declare heights because of positioning of img element */
 
 .carousel-item {
-	height: 45em;
-	background-color: #777;
+	height:32em; 
 }
 
 .carousel-item>img {
@@ -165,38 +164,7 @@ span.display {
 }
 
 /*--/slider--*/
-
-.carousel-item {
-	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban1.jpg) no-repeat;
-	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban1.jpg) no-repeat;
-	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban1.jpg) no-repeat;
-	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban1.jpg) no-repeat;
-	background-size: cover;
-}
-
-.carousel-item.item2 {
-	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban2.jpg) no-repeat;
-	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban2.jpg) no-repeat;
-	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban2.jpg) no-repeat;
-	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban2.jpg) no-repeat;
-	background-size: cover;
-}
-
-.carousel-item.item3 {
-	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban3.jpg) no-repeat;
-	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban3.jpg) no-repeat;
-	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban3.jpg) no-repeat;
-	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban3.jpg) no-repeat;
-	background-size: cover;
-}
-
-.carousel-item.item4 {
-	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban6.jpg) no-repeat;
-	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban6.jpg) no-repeat;
-	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban6.jpg) no-repeat;
-	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/ban6.jpg) no-repeat;
-	background-size: cover;
-}
+ 
 
 .carousel-caption h2,
 .carousel-caption h3 {
@@ -667,10 +635,11 @@ h3.heading {
 
 /*-- About top --*/
 .about-top p{
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
     color: #666;
-    line-height: 26px;
+	line-height: 30px;
+	text-indent:2em;
 }
 .about-top h4 {
     font-size: 23px;
@@ -1439,9 +1408,7 @@ li.nav-item{margin:0 2em;}
 	.portfolio-area li {
 		width: 242px;
 	}
-	.carousel-item {
-		height: 38em;
-	}
+	 
 	.carousel-caption {
 		bottom: 10em;
 	}
@@ -1469,9 +1436,7 @@ li.nav-item{margin:0 2em;}
 	figure.effect-layla ul {
 		padding: 6em 0 0;
 	}
-	.carousel-item {
-		height: 27em;
-	}
+	 
 	.main_service  {display: none}
 }
 @media(max-width: 1080px){
@@ -1496,9 +1461,7 @@ li.nav-item{margin:0 2em;}
 	.odometer {
 		font-size: 3em;
 	}
-	.carousel-item {
-		height: 36em;
-	}
+	 
 	.icon i.fas, .icon i.fab {
 		padding: 15px;
 	}
@@ -1649,9 +1612,7 @@ li.nav-item{margin:0 2em;}
 		font-size: 13px;
 		padding: 15px 30px;
 	}
-	.carousel-item {
-		height: 33em;
-	}
+	 
 }
 @media(max-width: 736px){
 	.portfolio-area li {
@@ -1707,9 +1668,7 @@ li.nav-item{margin:0 2em;}
 	.client .col-sm-4 {
 		max-width: 27%;
 	}
-	.carousel-item {
-		height: 30em;
-	}
+	 
 	.carousel-caption {
 		bottom: 8em;
 	}
@@ -1742,9 +1701,7 @@ li.nav-item{margin:0 2em;}
 	span.display {
 		font-size: 12px;
 	}
-	.carousel-item {
-		height: 27em;
-	}
+	 
 	.carousel-indicators {
 		left: -50%;
 	}
@@ -1804,9 +1761,7 @@ li.nav-item{margin:0 2em;}
 	.carousel-caption p {
 		font-size: 15px;
 	}
-	.carousel-item {
-		height: 24em;
-	}
+	 
 	.carousel-indicators li {
 		max-width: 10px;
 		height: 10px;
@@ -1843,9 +1798,7 @@ li.nav-item{margin:0 2em;}
 		font-size: 1.7em;
 		letter-spacing: 0px;
 	}
-	.carousel-item {
-		height: 22em;
-	}
+	 
 	.carousel-caption {
 		bottom: 5em;
 	}
