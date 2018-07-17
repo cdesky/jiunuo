@@ -1,0 +1,46 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="News.aspx.cs" Inherits="QiZhanBang.Web.News" %>
+<%@ Register src="UserControls/Top.ascx" tagname="Top" tagprefix="uc1" %>
+<%@ Register src="UserControls/Bottom.ascx" tagname="Bottom" tagprefix="uc3" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>公司动态 - 浙江承御天澍网络科技有限公司</title>
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://www.yim99.com/Scripts/public/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <style type="text/css">
+        .cnt_top { overflow:hidden; height:404px; background-image:url('images/news/1.jpg'); background-position:center top; background-repeat:no-repeat; }
+        .cnt { overflow:hidden; }
+        .cnt_1200 { width:1200px; margin:0 auto; margin-top:50px; min-height:300px; }
+        
+        .art_info { margin-bottom:20px; border-bottom:solid 1px #999; }
+        .art_info .title { line-height:1.5em; margin-bottom:10px; }
+        .art_info .title a{ font-size:20px; color:#333; line-height:1.5em; } 
+        .art_info .abstract { line-height:1.5em; margin-bottom:8px; }
+        .art_info .abstract a{ font-size:14px; color:#555; } 
+        .art_info .date { font-size:14px; line-height:1.5em; margin-bottom:8px; color:#555; }
+        
+
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <uc1:Top ID="Top1" runat="server" />
+        <div class="cnt_top"></div>
+        <div class="clear"></div>
+        <div class="cnt_1200">
+            <%=ArticelListStr %>
+
+        </div>
+
+        <uc3:Bottom ID="Bottom1" runat="server" />
+    </div>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+
+</script>
