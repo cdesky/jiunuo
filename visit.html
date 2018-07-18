@@ -139,7 +139,7 @@
 			success:function(data){
 				let res=''
 				$.each(data,function(i,val){
-					res+='<li class="portfolio-item2"><a class="image-zoom" href="visit/'+val.url+'" data-gal="prettyPhoto[gallery]"> <img src="visit/'+val.url+'" alt="'+val.title+'" ></a></li>'
+					res+='<li class="portfolio-item2"><a class="image-zoom" href="visit/'+val.url+'" data-gal="prettyPhoto[gallery]"> <img src="visit/'+val.url+'" alt="'+val.title+'" ></a><p>'+val.title+'</p></li>'
 				})
 				$('.pagelist').html(res)
 
