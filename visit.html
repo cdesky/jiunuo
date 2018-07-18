@@ -87,12 +87,12 @@
 		 
 		<ul class="portfolio-area   col-sm-12 pagelist">
 			<!-- 这里做循环 生成图片列表    需要一个小图  一个大图======================================== -->
-			<script>
+			<!-- <script>
 				for(let i=1;i<11;i++)
 				{
 					document.write('<li class="portfolio-item2 "><a class="image-zoom" href="visit/DSC02006.JPG" data-gal="prettyPhoto[gallery]"> <img src="visit/DSC02006.JPG" alt="" ></a></li>')
 				}
-				</script>
+				</script> -->
 			
 			 
 		</ul>
@@ -125,6 +125,7 @@
 	<!-- start-smoth-scrolling --> 
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
 	<script type="text/javascript">
 	  
 	 
@@ -135,12 +136,13 @@
 			url:'./visit.json',
 			dataType:'JSON',
 			async:false,
-			cache:true,
+			cache:false,
 			success:function(data){
 				let res=''
 				$.each(data,function(i,val){
-					res+='<li class="portfolio-item2"><a class="image-zoom" href="visit/'+val.url+'" data-gal="prettyPhoto[gallery]"> <img src="visit/'+val.url+'" alt="'+val.title+'" ></a><p>'+val.title+'</p></li>'
+					res+='<li class="portfolio-item2"><a class="image-zoom" href="visit/'+val.url+'"  data-gal="prettyPhoto[gallery]"> <img src="visit/'+val.url+'" alt="'+val.title+'" ></a></li>'
 				})
+				 
 				$('.pagelist').html(res)
 
 				//分页
@@ -159,11 +161,11 @@
 		});
 	});
 	</script>
- 
-    <script src="js/jquery.quicksand.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    
+  
+  <script src="js/jquery-1.7.2.js"></script>
+  <script src="js/jquery.quicksand.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
 
 </body>
 </html>
