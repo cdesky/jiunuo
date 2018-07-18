@@ -17,6 +17,7 @@
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
+		
 	</script>
 	<!--// Meta tag Keywords -->
 
@@ -28,10 +29,7 @@
 	
 	<!-- gallery css -->
     <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-
-	<!-- web-fonts -->
-	
-	<!-- //web-fonts -->
+ 
 	
 </head>
 
@@ -41,7 +39,7 @@
 <header>
 	<div class="container agile-banner_nav">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="index.html"> JIU NUO <span class="display">metallurgical machinery co.ltd</span></a>
+			<a class="navbar-brand" href="index.html"><img src="images/logo.png"/></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -78,9 +76,7 @@
 <!--Header-->
 
 <!-- inner page banner-->
-<div class="inner-banner inner-banner-visit">
-	
-</div>
+<div class="inner-banner inner-banner-visit"></div>
 <!-- //inner page banner-->
  
 
@@ -89,12 +85,12 @@
 	<div class="container">
 	<div class="container-fluid  text-center row "> 
 		 
-		<ul class="portfolio-area   col-sm-12 ">
+		<ul class="portfolio-area   col-sm-12 pagelist">
 			<!-- 这里做循环 生成图片列表    需要一个小图  一个大图======================================== -->
 			<script>
-				for(let i=1;i<8;i++)
+				for(let i=1;i<11;i++)
 				{
-					document.write('<li class="portfolio-item2 "><a class="image-zoom" href="visit/'+i+'.jpg" data-gal="prettyPhoto[gallery]"> <img src="visit/'+i+'.jpg" alt="这是标题" ></a><p class="pName">这是标题</p></li>')
+					document.write('<li class="portfolio-item2 "><a class="image-zoom" href="visit/DSC02006.JPG" data-gal="prettyPhoto[gallery]"> <img src="visit/DSC02006.JPG" alt="" ></a></li>')
 				}
 				</script>
 			
@@ -122,6 +118,7 @@
 
 	<!-- js -->
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
+	<script src="js/paging.js"></script>
 	<script type="text/javascript" src="js/bs.js"></script> 
 	<!-- //js -->	
 
@@ -129,22 +126,40 @@
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
+	  
+	 
+	jQuery(document).ready(function($) {
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		//加载访客图片
+		$.ajax({
+			url:'./visit.json',
+			dataType:'JSON',
+			async:false,
+			cache:true,
+			success:function(data){
+				let res=''
+				$.each(data,function(i,val){
+					res+='<li class="portfolio-item2"><a class="image-zoom" href="visit/'+val.url+'" data-gal="prettyPhoto[gallery]"> <img src="visit/'+val.url+'" alt="'+val.title+'" ></a></li>'
+				})
+				$('.pagelist').html(res)
+
+				//分页
+				$('.pagelist').kkPages({       
+					PagesClass:'.portfolio-item2', //需要分页的元素
+					PagesMth:8, //每页显示个数       
+					PagesNavMth:5 //显示导航个数
+				}); 
+			}
+		})
+		 
+		    
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
-	</script>
-	<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() { 
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
+	});
 	</script>
  
-    <script src="js/jquery-1.7.2.js"></script>
     <script src="js/jquery.quicksand.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
