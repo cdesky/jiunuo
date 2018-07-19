@@ -624,7 +624,8 @@ h3.heading {
 	line-height: 26px;
 	overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+	white-space: nowrap;
+	text-align: center;
 }
 .item a {
     font-size: 16px;

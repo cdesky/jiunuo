@@ -175,12 +175,12 @@
 				<div class="spldishes-grids">
 					<!-- Owl-Carousel -->
 					<div id="owl-Custom" class="owl-carousel agileinfo-gallery-row">
-						<script>
+						<!-- <script>
 							for(let i=1;i<8;i++)
 							{
 								document.write('<div class="item g1"><a href="visit.html"><img class="lazyOwl" src="visit/'+i+'.jpg" alt=""/></a><p class="my-2">slide name</p></div> ')
 							}
-						</script>
+						</script> -->
 					</div> 
 				</div>  
 				<div class="clearfix"> </div>
@@ -307,6 +307,24 @@
 	
  
 	<script>
+		//加载访客图片
+		$.ajax({
+			url:'./visit.json',
+			dataType:'JSON',
+			async:false,
+			cache:false,
+			success:function(data){
+				let res=''
+				$.each(data,function(i,val){
+					if(i<25)
+						res+='<div class="item g1"><a href="./visit.html"><img class="lazyOwl" src="visit/'+val.url+'" alt="'+val.title+'"/></a><p class="my-2">'+val.title+'</p></div>'
+				})
+				 
+				$('#owl-Custom').html(res)
+ 
+			}
+		})
+
 		setTimeout(function () {
 			jQuery('#w3l_stats1').html(22);
 		}, 1500);
