@@ -55,7 +55,8 @@ li.nav-item {
     margin: 0 1em;
 }
 .agile-banner_nav {
-    width: 100%;
+	width: 100%;
+	padding:  0 0 1em 0;
 }
 .bg-light {
     background-color: transparent !important;
@@ -1383,7 +1384,8 @@ ul.rating li span.fas {
 }
 /*-- //clients--*/
 
-
+a.navbar-brand{padding:0  0 0 2em !important;}
+a.navbar-brand span {position: absolute;bottom: -19px;left:5.6em ;font-size: 14px;color: #009688}
 /*-- Responsive Design --*/
 
 @media(min-width: 1440px){
@@ -1434,6 +1436,7 @@ li.nav-item{margin:0 2em;}
 	}
 	a.navbar-brand {
 		font-size: 3.4em;
+		position: relative;
 	}
 	figure.effect-layla ul {
 		padding: 6em 0 0;
@@ -1521,6 +1524,7 @@ li.nav-item{margin:0 2em;}
 	}
 	.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
 		padding: 0.25rem 0.75rem;
+		
 	}
 	.collections h3 {
 		font-size: 38px;
