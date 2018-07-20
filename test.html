@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery图片自动添加水印插件 - A5源码</title>
+<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css"> -->
+</head>
+<body>
+
+<div class="zzsc-content">
+	 
+
+    <h3>添加水印之后的图片</h3>
+    <!-- 第一个是不生成的，但要有，可以为空 -->
+	<img class="sample2" data-img2blob="" />
+	<img class="sample2" data-img2blob="images/ban1.jpg" /> 
+	<img class="sample2" data-img2blob="images/ban2.jpg" /> 
+	<img class="sample2" data-img2blob="images/ban3.jpg" /> 
+</div>
+
+<script src="js/jquery-1.7.2.js" type="text/javascript"></script>
+<script src="js/img2blob.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+
+	// default
+//	$(".sample1").img2blob();
+	
+	// with watermark
+	$(".sample2").img2blob({
+		watermark: 'www.9nmm.com',
+		fontStyle: 'Microsoft YaHei,Arial',
+		fontSize: '30', // px
+		fontColor: '#fff', // default 'black'
+		fontX: 150, // The x coordinate where to start painting the text
+		fontY: 150 // The y coordinate where to start painting the text
+	});
+
+});
+</script>
+ 
+</body>
+</html>
