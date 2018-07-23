@@ -125,8 +125,10 @@
 		$().UItoTop({ easingType: 'easeOutQuart' });
 		//加载访客图片
 		$.ajax({
-			url:'./visit.json',
+			url:'./visit.txt',
+			method:'GET',
 			dataType:'JSON',
+			contentType: 'application/json',
 			async:false,
 			cache:false,
 			success:function(data){
